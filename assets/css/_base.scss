@@ -1,0 +1,313 @@
+
+
+.Subpage {
+    &_ttl {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 200px;
+        font-size: 2.6rem;
+        background-image: url('../../assets/images/toiawase.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        &-inner {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+            display: table;
+            p {
+                white-space: pre-line;
+                line-height: 15px;
+                display: table-cell;
+                vertical-align: middle;
+                position: relative;
+                z-index: 2;
+            }
+            span {
+                font-size: 1.1rem;
+            }&:after {
+                content: '';
+                background-color: rgba(0,0,0,0.4);
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+            
+        }
+    }
+}
+.txt {
+    padding: 100px 0;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 30px;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    background-color: $back-color;
+}
+
+.mailform {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 100px 0;
+    .form {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        &-item {
+            margin-top: 20px;
+            &-02 {
+                .check-item {
+                    width: 24%;
+                }
+            }
+        }
+        &-btn {
+            max-width: 300px;
+            margin: 50px auto 0;
+            text-align: center;
+            background-color: $point-color;
+            padding: 10px 0;
+            button {
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+            
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        input,textarea {
+            width: 100%;
+            height: 50px;
+            border: 2px solid $txt-color;
+        }
+        textarea {
+            height: 150px;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        .item {
+            width: initial;
+            height: initial;
+        }
+        .check {
+            display: flex;
+            justify-content: space-between;
+            &-item {
+                border: 2px solid $txt-color;
+                padding: 5px 40px 5px 11px;
+                height: 50px;
+                line-height: 40px;
+            }
+        }
+        #submit_button {
+            border: none;
+        }
+    }
+}
+
+
+//******** confirm **********
+.confirm {
+    padding: 100px 0;
+    &_txt {
+        font-size: 1.8rem!important;
+    }
+    &_inner {
+        max-width: 1000px;
+        background-color: #fff;
+        width: 100%;
+        margin: 0 auto;
+        padding: 100px 0;
+        text-align: center;
+    }
+    &-item {
+        display: flex;
+        border-top: 1px solid $txt-color;
+        margin-top: 10px;
+        padding-top: 10px;
+        .ttl {
+            margin-right: 100px;
+            width: 207px;
+        }
+        &-last {
+            border-bottom: 1px solid $txt-color;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    &-btn {
+        display: flex;
+        max-width: 500px;
+        margin: 80px auto 0;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-return {
+        border: 1px solid $txt-color;
+        padding: 0 10px;
+        display: inline-block;
+    }
+    &-send {
+        width: 300px;
+        background-color: $point-color;
+        color: #fff;
+        padding: 10px 0;
+        display: inline-block;
+        height: 50px;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 2.0rem;
+        font-weight: bold;
+        padding-left: 100px;
+        margin-bottom: 40px;
+    }
+    .check-tem {
+        border: none;
+    }
+}
+
+//******** thanks ********** 
+
+.thanks {
+    padding: 100px 0;
+    &_inner {
+        max-width: 1000px;
+        background-color: #fff;
+        width: 100%;
+        margin: 0 auto;
+        padding: 100px 0;
+        text-align: center;
+    }
+    &_ttl {
+        font-size: 2.0rem;
+        text-align: left;
+        padding-left: 100px;
+    }
+    &_txt {
+        text-align: left;
+        padding-left: 100px;
+margin-top: 50px;
+    }
+    &-btn {
+        max-width: 300px;
+        text-align: center;
+        background-color: $point-color;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        top: 40px;
+        padding: 10px;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
+
+
+
+
+.footer {
+    background-color: $back-color;
+    height: 285px;
+    @include pc {
+        height: 400px;
+    }
+    @include tab {
+        height: 450px;
+    }
+    @include sp {
+        height: 600px;
+    }
+    &_inner {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include pc {
+            width: 90%;
+        }
+        .ttl {
+            font-size: 1.7rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .address {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        .tell {
+            width: 180px;
+            background-color: $point-color;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 6px 10px;
+            img {
+                width: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+    &_block02 {
+        max-width: 640px;
+        width: 100%;
+        &-lists {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &-link {
+                font-size: 1.4rem;
+                a:hover {
+                    border-bottom: 1px solid $txt-color;
+                }
+                @include tab {
+                    margin-top: 40px;
+                }
+                @include sp {
+                    width: 33%;
+                }
+            }
+            &-sub {
+                margin-top: 5px;
+                li a {
+                    font-size: 1.1rem;
+                    &:hover {
+                        border-bottom: 1px solid $txt-color;
+                    }
+                }
+            }
+        }
+
+    }
+    small {
+        font-size: 1.0rem;
+        text-align: center;
+    }
+}
+
+
+
+@include pc {
+    .submenu {
+        display: none;
+    }
+}

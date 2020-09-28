@@ -1,0 +1,35 @@
+html {
+    font-size: 62.5%;
+    @include sp {
+        font-size: 56.2%;
+    }
+}
+body {
+    font-size: 16px;
+    font-family: 'Noto Serif JP', serif;
+    letter-spacing: 1.2px;
+    color: $txt-color;
+}
+h2 {
+    font-size: 2.6rem;
+}
+
+.company {
+    &_ttl {
+        font-weight: 300;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 100px;
+        .border {
+            display: inline-block;
+            border-right: 3px solid $point-color;
+            height: 18px;
+            padding-left: 10px;
+        }
+        @include pc {
+            margin-left: 5%;
+        }
+    }
+    
+}
