@@ -1,1 +1,4 @@
-# ContactFORM
+# ContactForm
+
+PHPで作るお問い合わせフォーム。
+（フォーム、確認ページ、完了ページ）
